@@ -84,8 +84,11 @@ Las ramas para todos los proyectos son:
 ## Buenas Prácticas
 
 - Mantener las ramas `feature` pequeñas y específicas para facilitar la revisión.
-- Realizar revisiones de código a través de Pull Requests para asegurar la calidad.
-- Utilizar mensajes de commit claros y descriptivos.
-- Asegurarse de que las pruebas automatizadas pasen antes de fusionar cualquier Pull Request.
+- Commits Pequeños y Frecuentes: Realiza commits pequeños que aborden cambios específicos. Esto facilita la revisión y el seguimiento de cambios.
+-	Mensajes de Commit Claros y Descriptivos: Escribe mensajes de commit que expliquen claramente el propósito del cambio. Comienza con un verbo en tiempo presente, por ejemplo: "Corrige error de validación en formulario".
+-	Revisiones de Código (Code Reviews): Utiliza Pull Requests para revisar el código antes de fusionarlo en las ramas principales. Esto mejora la calidad del código y permite compartir conocimiento entre el equipo.
+-	Mantén el Repositorio Limpio: Elimina ramas que ya no sean necesarias después de que se hayan fusionado. Esto ayuda a mantener el repositorio organizado.
+-	Sincroniza Frecuentemente con la Rama Principal: Actualiza regularmente tu rama de trabajo con los cambios de develop o master. Esto minimiza conflictos de fusión y mantiene tu trabajo alineado con las últimas actualizaciones.
+-	Evita el Uso de force push: A menos que sea absolutamente necesario, evita usar force push, ya que puede sobrescribir el historial compartido y causar problemas para otros colaboradores.
 
 Este estándar tiene como objetivo optimizar el flujo de trabajo y asegurar una integración continua y ordenada de las nuevas funcionalidades y correcciones, respetando las responsabilidades de cada rol.
