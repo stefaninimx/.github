@@ -17,7 +17,7 @@
 
 ### Resumen del Flujo
 1. **El arquitecto define** el entorno principal (`main` y `develop`).
-2. **El líder técnico administra** las ramas de **`release` y `hotfix`**, y revisa los PR de `feature`.
+2. **El líder técnico administra** las ramas de **`release` y `hotfix`**, y revisa los Pull Request de `feature`.
 3. **Los desarrolladores crean** ramas de **`feature`** para su trabajo y envían PR para integrarlas en `develop`.
 
 
@@ -31,25 +31,61 @@ En este apartado se explica como se realiza el manejo de las ramas para los proy
 Las ramas para todos los proyectos son:
 
 * master
-* staging
+* release
 * develop
 * hotfix
 * feature
-* issue
-![Ramas](../assets/img/branches.PNG "Ramas")
+  
+## Flujo de Trabajo
 
+### Ramas Principales
 
-### master
-La rama master es la rama principal del repositorio. Esta es la rama que alberga el código que será desplegado en producción y sobre el que se maneja el versionamiento de la aplicación. Esta rama tiene las siguientes reglas:
-* El código no debe tener problemas de integración, compilación ni ejecución
-* El código debe haber sido probado por el tester y líder funcional (usuario que solicitó la solución)
-* Solo el mantainer puede mezclar cambios a esta rama
-* El versionamiento se realiza haciendo uso de [versionamiento semántico](VERSIONING.md)
-* La mezcla de cambios está limitada por la función de Pull request, no se permiten merge. Para la creación de pull request revise [nuestras normas de estilo](../style/PULL_REQUESTS.md)
+- **`main`**: Contiene el código de producción. Solo el arquitecto puede realizar cambios directos aquí.
+- **`develop`**: Rama base para el desarrollo continuo. Contiene el código preparado para la siguiente versión de lanzamiento.
 
-Para asegurar que los cambios solo sean mezclados haciendo uso de pull request, el mantainer puede agregar reglas las cuales se crean en el repositorio por medio del menú settings.
+### Ramas de Soporte
 
-**_Paso 1_**
-![Reglas](../assets/img/rules_1.PNG "Agregando reglas paso 1")
-**_Paso 2_**
-![Reglas](../assets/img/rules_2.PNG "Agregando reglas paso 2")
+- **`feature`**: Utilizadas para desarrollar nuevas funcionalidades. Se crean a partir de `develop`.
+  - **Convención de nombres**: `feature/nombre-descriptivo`.
+  - Se integran de nuevo en `develop` a través de un PR, que debe ser revisado y aprobado por el líder técnico.
+
+- **`release`**: Preparadas para la próxima versión de producción. Se crean a partir de `develop`.
+  - **Convención de nombres**: `release/vX.Y.Z`.
+  - Permiten realizar ajustes menores y pruebas finales. Después de ser revisadas, se integran en `main` y `develop`.
+
+- **`hotfix`**: Utilizadas para corregir errores críticos en producción. Se crean a partir de `main`.
+  - **Convención de nombres**: `hotfix/nombre-descriptivo`.
+  - Al finalizar, se integran tanto en `main` como en `develop`.
+
+## Flujo de Trabajo Detallado
+
+### Desarrollo de Funcionalidades (Feature)
+
+1. El desarrollador crea una rama `feature` desde `develop`.
+2. Desarrolla la nueva funcionalidad.
+3. Envía un Pull Request a `develop`.
+4. El líder técnico revisa y aprueba el Pull Request.
+5. La funcionalidad es integrada en `develop`.
+
+### Preparación de Lanzamientos (Release)
+
+1. El líder técnico crea una rama `release` desde `develop`.
+2. Se realizan pruebas y se corrigen errores menores.
+3. Una vez estable, la rama `release` se fusiona en `main` y `develop`.
+4. Se etiqueta la nueva versión en `main`.
+
+### Corrección de Errores Críticos (Hotfix)
+
+1. El líder técnico crea una rama `hotfix` desde `main`.
+2. Se corrige el error y se realizan pruebas.
+3. Se fusiona la rama `hotfix` en `main` y `develop`.
+4. Se etiqueta la nueva versión en `main`.
+
+## Buenas Prácticas
+
+- Mantener las ramas `feature` pequeñas y específicas para facilitar la revisión.
+- Realizar revisiones de código a través de Pull Requests para asegurar la calidad.
+- Utilizar mensajes de commit claros y descriptivos.
+- Asegurarse de que las pruebas automatizadas pasen antes de fusionar cualquier Pull Request.
+
+Este estándar tiene como objetivo optimizar el flujo de trabajo y asegurar una integración continua y ordenada de las nuevas funcionalidades y correcciones, respetando las responsabilidades de cada rol.
