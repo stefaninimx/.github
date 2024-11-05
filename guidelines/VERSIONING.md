@@ -1,6 +1,6 @@
 # Roles
 
-### 1. **Arquitecto / Admin Repositorio **
+### 1. **Arquitecto / Admin Repositorio**
    - **Crea y define la rama `main` y `develop`**: El arquitecto establece los lineamientos generales del proyecto, la estructura del repositorio y crea las ramas principales (`main` para la versión estable y `develop` para el desarrollo).
    - **Supervisa los merges finales a `main`**: Revisa las versiones y aprueba los cambios importantes para integrarse en la versión estable, asegurando que cumplan con los requisitos del proyecto.
 
