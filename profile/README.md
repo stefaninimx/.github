@@ -18,11 +18,11 @@ En estos repositorios, podrás encontrar:
 
 * [Control de Versiones](../guidelines/VERSIONING.md)
 
-* CODIFICACION JAVA - * [Control de Versiones](../guidelines/JAVAGuidelines.md)
+* CODIFICACION JAVA - * [JAVA](../guidelines/JAVAGuidelines.md)
 
-* CODIFICACION NET - * [Control de Versiones](../guidelines/NETGuidelines.md)
+* CODIFICACION NET - * [NET](../guidelines/NETGuidelines.md)
 
-* GUÍA PARA MEJORAR NUESTRAS BITÁCORAS - * [Control de Versiones](../guidelines/LOGS.md)
+* GUÍA PARA MEJORAR NUESTRAS BITÁCORAS - * [BITÁCORAS](../guidelines/LOGS.md)
 
   
 ## Contribuciones
