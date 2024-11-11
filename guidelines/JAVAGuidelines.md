@@ -79,3 +79,84 @@ El código de cada programa debe dividirse en las siguientes secciones, en este 
 - Sentencias de importación.
 - Comentarios iniciales (describen el propósito del archivo, clase o funcionalidad).
 - Declaración de clases e interfaces.
+
+### Estructura de Clases en Java
+
+Esta guía establece las convenciones para la declaración de paquetes, sentencias de importación, comentarios iniciales y la estructura de clases e interfaces en archivos Java, en conformidad con las prácticas recomendadas de desarrollo seguro y buenas prácticas de codificación.
+
+  ## 1. Declaración del Paquete
+  La primera línea del código que no sea un comentario debe ser la **declaración del paquete**.
+  
+  **Ejemplo**:
+  ```java
+  package mx.com.ejemplo.commons.model;
+  ```
+  
+  ## 2. Sentencias de Importación
+  Es importante optimizar las importaciones indicando **solo los objetos específicos** que se van a utilizar. **Evitar importar todos los objetos de un paquete** utilizando el comodín (`*`). Asimismo, evitar declarar un objeto indicando repetidamente el paquete al que pertenece.
+  
+  **Ejemplo**:
+  ```java
+  import java.util.List;
+  import mx.com.ejemplo.manager.NotificacionManager;
+  ```
+  
+  ## 3. Comentarios Iniciales
+  Cada archivo `.java` debe contener comentarios iniciales en el formato **javadoc**, incluyendo al menos los siguientes datos:
+  
+  ### Formato de Comentario Javadoc
+  - **Descripción**: Breve descripción de la clase pública en una línea de un máximo de 80 caracteres.
+    - Pueden incluirse varias líneas para una descripción completa.
+    - Se permite HTML básico conforme a las pautas de javadoc.
+  
+  - **Autor**: Nombre del autor original del archivo.
+  
+  **Ejemplo**:
+  ```java
+  /**
+   * Implementa la comunicación con la base de datos.<br>
+   *
+   * @author Ernesto Chávez
+   */
+  public class MiObjeto {
+      // Implementación de la clase
+  }
+  ```
+  
+  ## 4. Declaración de Clases e Interfaces
+  Las declaraciones de clases e interfaces deben estructurarse de manera organizada, incluyendo el uso de comentarios javadoc y una **distribución coherente de métodos y atributos** para facilitar la legibilidad y mantenimiento del código.
+  
+  ## 5. Declaración de Variables
+  Las variables se deben declarar en el siguiente orden, primero según su **nivel de acceso** y luego según sus **modificadores**:
+
+### Orden por Nivel de Acceso
+1. `public`
+2. `protected`
+3. `private`
+4. `package protected` (sin modificador)
+
+### Orden por Modificadores
+1. `static`
+2. `final`
+3. `transient`
+4. `volatile`
+
+**Ejemplo de Declaración de Variables**:
+```java
+public class EjemploClase {
+    
+    // Variables públicas
+    public static final int CONSTANTE = 10;
+    public transient String variableTransitoria;
+
+    // Variables protegidas
+    protected static List<String> listaProtegida;
+
+    // Variables privadas
+    private int contador;
+    private final String nombre = "ClaseEjemplo";
+
+    // Métodos y otros elementos de la clase...
+}
+```
+
