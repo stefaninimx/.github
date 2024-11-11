@@ -18,6 +18,13 @@ En estos repositorios, podrás encontrar:
 
 * [Control de Versiones](../guidelines/VERSIONING.md)
 
+* CODIFICACION JAVA - * [Control de Versiones](../guidelines/JAVAGuidelines.md)
+
+* CODIFICACION NET - * [Control de Versiones](../guidelines/NETGuidelines.md)
+
+* GUÍA PARA MEJORAR NUESTRAS BITÁCORAS - * [Control de Versiones](../guidelines/LOGS.md)
+
+  
 ## Contribuciones
 
 Damos la bienvenida a colaboraciones y contribuciones de la comunidad. Si estás interesado en colaborar con nosotros, por favor revisa las guías de contribución específicas de cada proyecto.
