@@ -35,3 +35,47 @@ A continuación se definen las normas de nomenclatura para paquetes, interfaces,
   ```java
   package com.stefanini.marketing.commons;
 
+### Clases
+Los nombres de las clases deben seguir estas reglas:
+
+- Sustantivo en Singular: Los nombres de clases específicas deben ser sustantivos en singular que usualmente representan entidades o actores.
+
+  **Ejemplo**:
+  ```java
+  BusinessRulesValidator, User
+
+Sufijo **Impl** para Implementaciones: Los nombres de clases que implementen una interfaz de tipo deben utilizar el sufijo **Impl** u otro sufijo relacionado con el tipo de la interfaz.
+
+  **Ejemplo**:
+  ```java
+  class SaleProductImpl implements SaleProduct;
+  class RegisterSaleCmd implements RegisterSale;
+  ```
+
+### Constantes
+Los nombres de las constantes deben seguir las mismas reglas de nomenclatura que las variables, pero deben escribirse completamente en mayúsculas, con palabras separadas por guiones bajos si es necesario.
+
+  **Ejemplo**:
+  
+  ```java
+  public static final int FALSE = 0;
+  public static final int TRUE = 1;
+  ```
+
+### Métodos
+Los nombres de los métodos deben ser verbos en inglés en su forma base, y deben seguir la notación camelCase (primera letra en minúscula y cada palabra interna con mayúscula).
+
+  **Ejemplo**:
+  
+  ```java
+  public void run();
+  public int jumpHigh();
+  ```
+
+### Formato de Codificación
+El código de cada programa debe dividirse en las siguientes secciones, en este orden:
+
+- Declaración del paquete.
+- Sentencias de importación.
+- Comentarios iniciales (describen el propósito del archivo, clase o funcionalidad).
+- Declaración de clases e interfaces.
