@@ -116,7 +116,7 @@ Esta guía establece las convenciones para la declaración de paquetes, sentenci
   /**
    * Implementa la comunicación con la base de datos.<br>
    *
-   * @author Ernesto Chávez
+   * @author Juan Perez
    */
   public class MiObjeto {
       // Implementación de la clase
@@ -154,7 +154,7 @@ public class EjemploClase {
 
     // Variables privadas
     private int contador;
-    private final String nombre = "ClaseEjemplo";
+    private final String nombre = "EjemploClase";
 
     // Métodos y otros elementos de la clase...
 }
