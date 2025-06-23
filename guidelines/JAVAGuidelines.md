@@ -4,7 +4,7 @@ Esta guía se enfoca en establecer las mejores prácticas para el desarrollo en 
 
 ## Objetivo
 
-El propósito de este documento es guiar a los desarrolladores en el uso de buenas prácticas de programación en Java, asegurando que el código sea más fácil de mantener y cumpla con estándares mínimos de calidad. **No es un manual de entrenamiento en Java**, sino una referencia de buenas prácticas que busca estandarizar el desarrollo de aplicaciones SOA en Java.
+El propósito de este documento es guiar a los desarrolladores en el uso de buenas prácticas de programación en Java, asegurando que el código sea más fácil de mantener y cumpla con estándares mínimos de calidad. **No es un manual de entrenamiento en Java**, sino una referencia de buenas prácticas que busca estandarizar el desarrollo de aplicaciones modernas y robustas en Java.
 
 ## Audiencia
 
