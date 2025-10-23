@@ -24,7 +24,7 @@ En estos repositorios, podrás encontrar:
 
 * GUÍA PARA MEJORAR NUESTRAS BITÁCORAS - * [BITÁCORAS](../guidelines/LOGS.md)
 
-* Nombramiento de Objetos BD - * [BD](../guidelines/NombradoBD.md)
+* Nombramiento de Objetos BD - * [BD](../guidelines/BD.md)
   
 ## Contribuciones
 
