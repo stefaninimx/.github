@@ -1,9 +1,4 @@
 # Lineamientos Estándar para el Nombramiento de Objetos en Bases de Datos
-
-**Autor:** Equipo de Arquitectura de Datos  
-**Versión:** 1.0  
-**Última actualización:** 2025-10-23  
-
 ---
 
 ## 📘 Propósito
